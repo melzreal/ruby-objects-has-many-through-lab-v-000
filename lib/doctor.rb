@@ -1,5 +1,5 @@
 class Doctor 
-  attr_accessor :name, :patient, :appointment
+  attr_accessor :name, :patient
   @@all = [] 
   
   def initialize(name)
@@ -23,7 +23,7 @@ class Doctor
 
   def patients 
     appointments.map do |s|
-      s.patient
+      s.patients
       end
   end 
  
