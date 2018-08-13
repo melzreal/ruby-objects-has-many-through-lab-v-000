@@ -15,10 +15,5 @@ class Appointment
   end 
   
   
-  def patients 
-    Patient.all.select do |s|
-      s.appoin == self
-    end
-  end 
- 
+
 end 
