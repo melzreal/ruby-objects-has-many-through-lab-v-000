@@ -14,5 +14,11 @@ class Appointment
     @@all
   end 
   
+  
+  def songs 
+    Song.all.select do |s|
+      s.genre == self
+    end
+  end 
  
 end 
