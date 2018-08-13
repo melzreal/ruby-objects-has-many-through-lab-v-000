@@ -15,9 +15,9 @@ class Appointment
   end 
   
   
-  def songs 
-    Song.all.select do |s|
-      s.genre == self
+  def patients 
+    Patient.all.select do |s|
+      s.appoin == self
     end
   end 
  
